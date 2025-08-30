@@ -9,8 +9,8 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'dev', url: 'https://github.com/LucidKarthik/Docker-phy.git
-' 
+                // Fixed the missing closing quote in the URL
+                git branch: 'dev', url: 'https://github.com/LucidKarthik/Docker-phy.git'
             }
         }
 
