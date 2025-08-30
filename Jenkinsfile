@@ -9,7 +9,8 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/LucidKarthik/Docker-phy.git' 
+                git branch: 'dev', url: 'https://github.com/LucidKarthik/Docker-phy.git
+' 
             }
         }
 
