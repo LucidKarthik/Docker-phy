@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'luciddockerkk/flask-app'               // Your Docker Hub image name
-        DOCKER_CREDENTIALS = credentials('docker-phy')  // Use the ID you set in Jenkins
+        IMAGE_NAME = 'luciddockerkk/flask-app'              
+        DOCKER_CREDENTIALS = credentials('docker-phy')  
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/YOUR_USERNAME/YOUR_REPO.git' // replace with your GitHub repo
+                git 'https://github.com/LucidKarthik/Docker-phy.git' 
             }
         }
 
