@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = 'luciddockerkk/flask-app'              
-        DOCKER_CREDENTIALS = credentials('docker-phy')  
+        DOCKER_CREDENTIALS = credentials('docker-python')  
     }
 
     stages {
